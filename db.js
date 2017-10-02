@@ -53,5 +53,40 @@ const Teacher = db.define('teacher', {
 	}
 });
 
+Student.create({
+	name: 'John',
+	GPA: 3,
+	teacherId: 1
+});
 
-module.exports = {db, Student, Teacher}
+Student.create({
+	name: 'Molly',
+	GPA: 4,
+	teacherId: 1
+});
+
+Student.create({
+	name: 'Bruce',
+	GPA: 4,
+	teacherId: 2
+});
+
+Student.create({
+	name: 'Sally',
+	GPA: 2,
+	teacherId: 2
+});
+
+Teacher.create({
+	name: 'Mrs. Smith',
+	subject: 'Math'
+});
+
+Teacher.create({
+	name: 'Mr. Perry',
+	subject: 'Languages'
+});
+
+
+
+module.exports = {db, Student, Teacher};
